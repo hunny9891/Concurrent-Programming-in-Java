@@ -10,7 +10,7 @@ import java.util.concurrent.BrokenBarrierException;
 import java.util.concurrent.atomic.AtomicLong;
 
 import edu.coursera.concurrent.CoarseLists.CoarseList;
-import edu.coursera.concurrent.CoarseLists.CoarseList.RWCoarseList;
+import edu.coursera.concurrent.CoarseLists.RWCoarseList;
 
 public class ListSetTest extends TestCase {
     private final int randNumsLength = 10_000;
@@ -235,13 +235,12 @@ public class ListSetTest extends TestCase {
             final SequenceGenerator removeSeq) throws InterruptedException {
         final int numThreads = getNCores();
 
-        
-         /* Require several warm-ups to ensure JIT does not interfere with thread
+        /*
+         * Require several warm-ups to ensure JIT does not interfere with thread
          * scheduling. We interleave runs of the baseline and the implementation
          * we're testing to try to make any interference on Coursera's
          * autograding platform the same across both.
          */
-         
         TestResults resultsA = null;
         TestResults resultsB = null;
         for (int r = 0; r < 5; r++) {
@@ -322,11 +321,10 @@ public class ListSetTest extends TestCase {
         // request GC
         requestGarbageCollection();
 
-        
-         /* Assert that the resulting list is sorted and save the length of the
+        /*
+         * Assert that the resulting list is sorted and save the length of the
          * list after the initial adds.
          */
-         
         int listLengthAfterAdds = 1;
         Entry prev = list.getHead();
         Entry curr = prev.next;
@@ -368,11 +366,10 @@ public class ListSetTest extends TestCase {
         // request GC
         requestGarbageCollection();
 
-        
-         /* Verify list is still sorted and record length, successes, and
+        /*
+         * Verify list is still sorted and record length, successes, and
          * failures.
          */
-         
         int listLengthAfterRemoves = 1;
         prev = list.getHead();
         curr = prev.next;
