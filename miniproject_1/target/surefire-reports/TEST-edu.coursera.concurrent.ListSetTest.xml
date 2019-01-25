@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="edu.coursera.concurrent.ListSetTest" time="522.481" tests="6" errors="0" skipped="0" failures="5">
+<testsuite name="edu.coursera.concurrent.ListSetTest" time="919.254" tests="6" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
-    <property name="sun.boot.library.path" value="C:\Program Files\Java\jre1.8.0_191\bin"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_191\jre\bin"/>
     <property name="java.vm.version" value="25.191-b12"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="maven.multiModuleProjectDirectory" value="C:\Users\himan\Documents\GitHub\Concurrent-Programming-in-Java\miniproject_1"/>
@@ -19,146 +19,55 @@
     <property name="user.dir" value="C:\Users\himan\Documents\GitHub\Concurrent-Programming-in-Java\miniproject_1"/>
     <property name="java.runtime.version" value="1.8.0_191-b12"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jre1.8.0_191\lib\endorsed"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_191\jre\lib\endorsed"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.io.tmpdir" value="C:\Users\himan\AppData\Local\Temp\"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 10"/>
-    <property name="classworlds.conf" value="C:\Users\himan\Documents\Java\EclipseWorkspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf598313404123767159.tmp"/>
+    <property name="classworlds.conf" value="C:\Users\himan\Documents\apache-maven-3.5.4\bin\..\bin\m2.conf"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jre1.8.0_191\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_191/bin/server;C:/Program Files/Java/jre1.8.0_191/bin;C:/Program Files/Java/jre1.8.0_191/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\libnvvp;C:\Program Files (x86)\Intel\iCLS Client\;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Cloud Foundry;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\CMake\bin;C:\Program Files\Git\cmd;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\Java\jdk-11.0.1\bin;C:\Users\himan\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Microsoft VS Code\bin;C:\Users\himan\AppData\Local\GitHubDesktop\bin;C:\Users\himan\AppData\Local\Microsoft\WindowsApps;C:\Users\himan\AppData\Local\Continuum\anaconda3\Scripts;C:\Users\himan\AppData\Local\Continuum\anaconda3;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\bin;;C:\Users\himan\Documents\Java\eclipse;;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_191\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\libnvvp;C:\Program Files (x86)\Intel\iCLS Client\;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Cloud Foundry;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\CMake\bin;C:\Program Files\Git\cmd;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\Java\jdk1.8.0_191\bin;C:\Users\himan\Documents\apache-maven-3.5.4\bin;C:\Users\himan\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Microsoft VS Code\bin;C:\Users\himan\AppData\Local\GitHubDesktop\bin;C:\Users\himan\AppData\Local\Microsoft\WindowsApps;C:\Users\himan\AppData\Local\Continuum\anaconda3\Scripts;C:\Users\himan\AppData\Local\Continuum\anaconda3;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\bin;C:\Users\himan\Documents\apache-maven-3.5.4\bin;;."/>
+    <property name="maven.conf" value="C:\Users\himan\Documents\apache-maven-3.5.4\bin\../conf"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="os.version" value="10.0"/>
+    <property name="library.jansi.path" value="C:\Users\himan\Documents\apache-maven-3.5.4\bin\..\lib\jansi-native"/>
     <property name="user.home" value="C:\Users\himan"/>
     <property name="user.timezone" value="Asia/Calcutta"/>
     <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
     <property name="java.specification.version" value="1.8"/>
     <property name="file.encoding" value="Cp1252"/>
     <property name="user.name" value="himan"/>
-    <property name="java.class.path" value="C:\Users\himan\Documents\Java\eclipse\plugins\org.eclipse.m2e.maven.runtime_1.8.2.20171007-0216\jars\plexus-classworlds-2.5.2.jar"/>
+    <property name="java.class.path" value="C:\Users\himan\Documents\apache-maven-3.5.4\bin\..\boot\plexus-classworlds-2.5.2.jar"/>
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="java.home" value="C:\Program Files\Java\jre1.8.0_191"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Pminiproject_1 -B install"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_191\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test -f c:\Users\himan\Documents\GitHub\Concurrent-Programming-in-Java\miniproject_1\pom.xml"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
     <property name="java.vm.info" value="mixed mode"/>
     <property name="java.version" value="1.8.0_191"/>
-    <property name="java.ext.dirs" value="C:\Program Files\Java\jre1.8.0_191\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
-    <property name="sun.boot.class.path" value="C:\Program Files\Java\jre1.8.0_191\lib\resources.jar;C:\Program Files\Java\jre1.8.0_191\lib\rt.jar;C:\Program Files\Java\jre1.8.0_191\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_191\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_191\lib\jce.jar;C:\Program Files\Java\jre1.8.0_191\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_191\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_191\classes"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_191\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_191\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_191\jre\classes"/>
+    <property name="sun.stderr.encoding" value="cp437"/>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="maven.home" value="C:\Users\himan\Documents\GitHub\Concurrent-Programming-in-Java\miniproject_1\EMBEDDED"/>
+    <property name="maven.home" value="C:\Users\himan\Documents\apache-maven-3.5.4\bin\.."/>
     <property name="file.separator" value="\"/>
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.stdout.encoding" value="cp437"/>
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="testCoarseGrainedLockingRandomLarge" classname="edu.coursera.concurrent.ListSetTest" time="151.851">
-    <failure message="expected:&lt;50535&gt; but was:&lt;50532&gt;" type="junit.framework.AssertionFailedError"><![CDATA[junit.framework.AssertionFailedError: expected:<50535> but was:<50532>
-	at junit.framework.Assert.fail(Assert.java:47)
-	at junit.framework.Assert.failNotEquals(Assert.java:280)
-	at junit.framework.Assert.assertEquals(Assert.java:64)
-	at junit.framework.Assert.assertEquals(Assert.java:198)
-	at junit.framework.Assert.assertEquals(Assert.java:204)
-	at edu.coursera.concurrent.ListSetTest.testCoarseGrainedLockingHelper(ListSetTest.java:150)
-	at edu.coursera.concurrent.ListSetTest.testCoarseGrainedLockingRandomLarge(ListSetTest.java:52)
-]]></failure>
-    <system-out><![CDATA[=========================================================
-CoarseList vs. SyncList (Large Random)
-=========================================================
-# threads = 8
-4.9267106634248x improvement in add throughput (7.520210565895845 -> 37.049901586198914)
-5.254096884566901x improvement in contains throughput (21.935837674801206 -> 115.25301638753827)
-5.365865047863648x improvement in remove throughput (27.847880950308937 -> 149.42797104833062)
-=========================================================
-]]></system-out>
-  </testcase>
-  <testcase name="testCoarseGrainedLockingRepeatingLarge" classname="edu.coursera.concurrent.ListSetTest" time="71.827">
-    <failure message="expected:&lt;10000&gt; but was:&lt;10050&gt;" type="junit.framework.AssertionFailedError"><![CDATA[junit.framework.AssertionFailedError: expected:<10000> but was:<10050>
-	at junit.framework.Assert.fail(Assert.java:47)
-	at junit.framework.Assert.failNotEquals(Assert.java:280)
-	at junit.framework.Assert.assertEquals(Assert.java:64)
-	at junit.framework.Assert.assertEquals(Assert.java:198)
-	at junit.framework.Assert.assertEquals(Assert.java:204)
-	at edu.coursera.concurrent.ListSetTest.testCoarseGrainedLockingHelper(ListSetTest.java:158)
-	at edu.coursera.concurrent.ListSetTest.testCoarseGrainedLockingRepeatingLarge(ListSetTest.java:69)
-]]></failure>
-    <system-out><![CDATA[=========================================================
-CoarseList vs. SyncList (Large Repeating)
-=========================================================
-# threads = 8
-6.923578947368421x improvement in add throughput (116.76346276644267 -> 808.421052631579)
-7.682051282051281x improvement in contains throughput (94.94140335261831 -> 729.3447293447293)
-1.618991793669402x improvement in remove throughput (2780.59377262853 -> 4501.758499413833)
-=========================================================
-]]></system-out>
-  </testcase>
-  <testcase name="testReadWriteLocksRepeatingSmall" classname="edu.coursera.concurrent.ListSetTest" time="36.592">
-    <failure message="expected:&lt;10000&gt; but was:&lt;10001&gt;" type="junit.framework.AssertionFailedError"><![CDATA[junit.framework.AssertionFailedError: expected:<10000> but was:<10001>
-	at junit.framework.Assert.fail(Assert.java:47)
-	at junit.framework.Assert.failNotEquals(Assert.java:280)
-	at junit.framework.Assert.assertEquals(Assert.java:64)
-	at junit.framework.Assert.assertEquals(Assert.java:198)
-	at junit.framework.Assert.assertEquals(Assert.java:204)
-	at edu.coursera.concurrent.ListSetTest.testReadWriteLocksHelper(ListSetTest.java:205)
-	at edu.coursera.concurrent.ListSetTest.testReadWriteLocksRepeatingSmall(ListSetTest.java:133)
-]]></failure>
-    <system-out><![CDATA[=========================================================
-RWCoarseList vs. SyncList (Small Repeating)
-=========================================================
-# threads = 8
-6.4657827202737375x improvement in add throughput (127.00932724746974 -> 821.2147134302822)
-5.782538659793814x improvement in contains throughput (106.96974761825172 -> 618.5567010309278)
-1.6656976744186045x improvement in remove throughput (1116.9284467713787 -> 1860.4651162790697)
-=========================================================
-]]></system-out>
-  </testcase>
-  <testcase name="testReadWriteLocksRandomSmall" classname="edu.coursera.concurrent.ListSetTest" time="43.629"/>
-  <testcase name="testReadWriteLocksRandomLarge" classname="edu.coursera.concurrent.ListSetTest" time="147.823">
-    <failure message="expected:&lt;50535&gt; but was:&lt;50533&gt;" type="junit.framework.AssertionFailedError"><![CDATA[junit.framework.AssertionFailedError: expected:<50535> but was:<50533>
-	at junit.framework.Assert.fail(Assert.java:47)
-	at junit.framework.Assert.failNotEquals(Assert.java:280)
-	at junit.framework.Assert.assertEquals(Assert.java:64)
-	at junit.framework.Assert.assertEquals(Assert.java:198)
-	at junit.framework.Assert.assertEquals(Assert.java:204)
-	at edu.coursera.concurrent.ListSetTest.testReadWriteLocksHelper(ListSetTest.java:197)
-	at edu.coursera.concurrent.ListSetTest.testReadWriteLocksRandomLarge(ListSetTest.java:85)
-]]></failure>
-    <system-out><![CDATA[=========================================================
-RWCoarseList vs. SyncList (Large Random)
-=========================================================
-# threads = 8
-3.8227545608206563x improvement in add throughput (9.758031317181759 -> 37.30255872238737)
-5.15181637448039x improvement in contains throughput (22.452201368181022 -> 115.66961865172601)
-5.42981220657277x improvement in remove throughput (27.66849682244607 -> 150.23474178403757)
-=========================================================
-]]></system-out>
-  </testcase>
-  <testcase name="testReadWriteLocksRepeatingLarge" classname="edu.coursera.concurrent.ListSetTest" time="70.759">
-    <failure message="expected:&lt;10000&gt; but was:&lt;10194&gt;" type="junit.framework.AssertionFailedError"><![CDATA[junit.framework.AssertionFailedError: expected:<10000> but was:<10194>
-	at junit.framework.Assert.fail(Assert.java:47)
-	at junit.framework.Assert.failNotEquals(Assert.java:280)
-	at junit.framework.Assert.assertEquals(Assert.java:64)
-	at junit.framework.Assert.assertEquals(Assert.java:198)
-	at junit.framework.Assert.assertEquals(Assert.java:204)
-	at edu.coursera.concurrent.ListSetTest.testReadWriteLocksHelper(ListSetTest.java:205)
-	at edu.coursera.concurrent.ListSetTest.testReadWriteLocksRepeatingLarge(ListSetTest.java:117)
-]]></failure>
-    <system-out><![CDATA[=========================================================
-RWCoarseList vs. SyncList (Large Repeating)
-=========================================================
-# threads = 8
-7.608892726095403x improvement in add throughput (108.92998978781345 -> 828.8366069501403)
-6.702259060620834x improvement in contains throughput (93.11573995489707 -> 624.0858117991223)
-1.6181102362204725x improvement in remove throughput (2335.7664233576643 -> 3779.527559055118)
-=========================================================
-]]></system-out>
-  </testcase>
+  <testcase name="testReadWriteLocksRandomLarge" classname="edu.coursera.concurrent.ListSetTest" time="257.64"/>
+  <testcase name="testReadWriteLocksRandomSmall" classname="edu.coursera.concurrent.ListSetTest" time="72.03"/>
+  <testcase name="testReadWriteLocksRepeatingSmall" classname="edu.coursera.concurrent.ListSetTest" time="64.66"/>
+  <testcase name="testReadWriteLocksRepeatingLarge" classname="edu.coursera.concurrent.ListSetTest" time="124.58"/>
+  <testcase name="testCoarseGrainedLockingRandomLarge" classname="edu.coursera.concurrent.ListSetTest" time="272.368"/>
+  <testcase name="testCoarseGrainedLockingRepeatingLarge" classname="edu.coursera.concurrent.ListSetTest" time="127.976"/>
 </testsuite>
